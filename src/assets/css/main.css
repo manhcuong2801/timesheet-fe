@@ -1,0 +1,267 @@
+body{
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	background-color: #EFF3F8;
+	font-size: 0.875rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+    font-weight: normal;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+.lead {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+p{
+	font-size: 0.875rem;
+}
+.btn{
+	font-size: 0.875rem;
+}
+.btn:focus{
+	box-shadow: none;
+}
+.text-primary,
+a {
+	color: #0D688F;
+}
+a:hover{
+	color: #007DB2;
+}
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+	background-color: #0D688F;
+}
+.btn-outline-primary {
+	color: #0D688F;
+	border-color: #0D688F;
+	background-color: rgba(255,255,255,0.75);
+}
+.btn-outline-primary:hover{
+	background-color: #0D688F;
+	color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus{
+	background-color: #9CB1BA;
+	border-color: #9CB1BA;
+}
+
+.container{
+	max-width: 48rem;
+}
+/* Site */
+.site{
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+	background-color: #EFF3F8;
+	font-size: 0.875rem;
+}
+/* Site Header */
+.site-header{
+	background-color: #fff;
+	padding: 0.75rem 0;
+}
+.site-header .site-title{
+	line-height: 2.5rem;
+	font-size: 2rem;
+	text-align: center;
+}
+.site-header .site-title .site-logo{
+	max-height: 2.5rem;
+}
+/* Site Main */
+.site-main {
+	padding: 2rem 0 1rem;
+	flex-grow: 1;
+}
+
+/* Dropzone */
+.dropzone {
+	background: #EFF3F8;
+    border-image: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+	position: relative;
+	cursor: pointer;
+}
+.dropzone:hover{
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.inner{
+	min-height: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.inner .icon {
+	font-size: 32px;
+}
+
+.hidden-input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.dropzone .inner{
+	min-height: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dropzone .inner img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.dropzone .inner .icon {
+	font-size: 32px;
+	color: #ccc; 
+}
+.dropzone .hidden-input {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+.nav-steps {
+
+}
+.nav-steps .nav-item .nav-link{
+	padding: 0;
+	display: flex;
+	align-items: center;
+	color: #666;
+	position: relative;
+}
+.nav-steps .nav-item.disabled .nav-link {
+	cursor: not-allowed;
+}
+.nav-steps .nav-item .nav-link .number{
+	width: 2rem;
+	height: 2rem;
+	background-color: #ccc;
+	color: #fff;
+	display: flex;
+	margin-right: 0.5rem;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.nav-steps .nav-item.active .nav-link {
+	color: #f99b26;
+}
+.nav-steps .nav-item.active .nav-link .number {
+	background-color: #f99b26;
+	color: #fff;
+}
+
+/* Scroll Top */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: all ease 0.2s;
+}
+
+.scroll-top-link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    color: #0D688F;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all ease 0.2s;
+}
+
+.scroll-top-link:hover {
+    line-height: 30px;
+    transition: all ease 0.2s;
+}
+
+/* Site Footer */
+.site-footer{
+	background-color: rgba(13,104,143,0.2);
+}
+
+@media screen and (max-width: 48rem){
+	.dropzone .inner{
+		min-height: 5rem;
+	}
+	.dropzone .inner img {
+		max-height: 100%;
+		max-width: 100%;
+	}
+	
+}
+
+.mr-3{
+	margin-right: 0.3em;
+}
+
+.cursor_pointer{
+	cursor: pointer;
+}
+
+.invalid {
+    border: 1px solid!important;
+    border-color: #dc3545!important;
+ }
+ 
